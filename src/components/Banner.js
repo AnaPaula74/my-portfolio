@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.png";
 import 'animate.css';
@@ -10,10 +10,11 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
-  const toRotate = ["Software Engineer", "Full Stack Developer"];
+
+  const toRotate = useMemo(() => ["Software Engineer", "Full Stack Developer"], []); // Memoize the array
 
   const tick = useCallback(() => {
-    let i = toRotate.length > 0 ? toRotate.length - 1 : 0;
+    let i = toRotate.length - 1;
     let fullText = toRotate[i];
     let updatedText = isDeleting
       ? fullText.substring(0, text.length - 1)
@@ -30,10 +31,10 @@ export const Banner = () => {
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
-      setLoopNum(loopNum + 1);
+      setLoopNum((prevLoopNum) => prevLoopNum + 1);
       setDelta(500);
     }
-  }, [text, isDeleting, delta, toRotate]);
+  }, [text, isDeleting, toRotate]);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -43,7 +44,7 @@ export const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
-  }, [text, delta, tick]);
+  }, [text, isDeleting, delta, toRotate, loopNum, tick]);
 
   const handleDownload = () => {
     const cvLink = "https://drive.google.com/file/d/1H99iTZjsh84pJIHB2ddCA690A8jkIp2O/view?usp=sharing";
