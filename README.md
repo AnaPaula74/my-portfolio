@@ -8,8 +8,8 @@ This React app serves as a part of my portfolio and is created using Create Reac
 ## Quick Start
 
 #### 1. Clone the repository:
-git clone https://github.com/your-username/your-react-app.git
-cd your-react-app
+git clone https://github.com/AnaPaula74/my-portfolio.git
+cd my-portfolio
 
 #### 2. Install dependencies:
 npm install
