@@ -1,6 +1,7 @@
 # Portfolio Project: Getting Started with Create React App
 ## Welcome to My Portfolio Project!
-![Captura Web_16-11-2023_133059_localhost](https://github.com/AnaPaula74/my-portfolio/assets/123080363/f86ad2f9-1de1-4e1a-a673-41e84f363823)
+![Captura Web_15-12-2023_17442_my-portfolio-ana netlify app](https://github.com/AnaPaula74/my-portfolio/assets/123080363/c16077a1-3e22-483d-8a5d-71a5a10c2de7)
+
 
 
 This React app serves as a part of my portfolio and is created using Create React App, offering a swift setup for a React application.
