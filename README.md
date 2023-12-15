@@ -7,8 +7,8 @@
 This React app serves as a part of my portfolio and is created using Create React App, offering a swift setup for a React application.
 
 ## Quick Start
-
-```1. Clone the repository:
+```
+1. Clone the repository:
 git clone https://github.com/AnaPaula74/my-portfolio.git
 cd my-portfolio
 
