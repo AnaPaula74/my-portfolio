@@ -8,15 +8,16 @@ This React app serves as a part of my portfolio and is created using Create Reac
 
 ## Quick Start
 
-#### 1. Clone the repository:
+```1. Clone the repository:
 git clone https://github.com/AnaPaula74/my-portfolio.git
 cd my-portfolio
 
-#### 2. Install dependencies:
+ 2. Install dependencies:
 npm install
 
-#### 3. Run the development server:
+3. Run the development server:
 npm start
 This starts the app in development mode at http://localhost:3000. The page auto-reloads on code changes.
+```
 
 #### Feel free to explore my portfolio project and learn more about my skills and projects. Happy browsing!
